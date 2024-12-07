@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Specio Techtonic</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><img src="images/favicon.ico" "id="logo"/><a href="#home">SPACIO <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;TECHTONICS</a> </li> 
+                    <li><a href="#home">Our Work</a></li>
+                    <li><a href="#about">Why Us?</a></li>
+                    <li><div class="rightNav">
+                        <button class="btn btn-sm" style="border-radius: 15px;">BOOK AN APPOINTMENT</button>
+                    </div></li>
+                    <li><img src="images/menu.png" style="height: 40px; width: 40px;"/></li>
+                </ul>
+            </nav>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/image1.png" style="width:100%">
+                        <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/image1.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                </div>   
+                <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/image1.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                </div>
+                    <br>
+                <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                </div>
+            </div>
+
+            <div class="item1" style="text-align: center; font-size: 12px;">&copy; SPACIO TECHTONICS ! all right reserved</div>
+                
+            <section style="margin-left: 260px;">
+                    <div class="vl">
+                            <h2 style="margin-left: 10px;">We are <br/>
+                            Spacio Techtonics</h2>
+                    </div>
+            </section>
+            <div class="grid-container">
+                <div class="item3" style="margin-left: 250px; margin-top: 200px;"> 
+                            <button class="btn btn-sm" style="border-radius: 15px; height: 100px; width: 200px; background-color: white; color: black;">MORE ON OUR<br/>EXPERTISE <img src="images/right-up.png" style="height: 30px; width: 30px;"/></button>
+                </div>  
+                <div class="item4" style="margin-left: 300px; margin-right: 150px;">Innovation and technology should make life simple—not the other way around.<br/><br/>
+                            We built Spacio Techtonics to help architects and engineers build their dreams and realise them with<br/>              
+                            <b><u>custom - programmed digital tools.</u></b><br/><br/>
+                            With diverse backgrounds of engineers with professional experience and projects across India, we offer<br/> 
+                            <b><u>facade architecture , engineering and advisory services</u></b> <br/> <br/>
+                            to you to realise your dreams with confidence<br/><br/>
+                            <b>Make your dreams grow with innovation that flows.</b>
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/image2.png" style="width:100%">
+                        <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/image2.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                </div>   
+                <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/image2.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+            </div>
+        </div>
+
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>        
+    </body>
+</html>
